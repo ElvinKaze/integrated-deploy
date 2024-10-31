@@ -4,11 +4,11 @@ version: 2.1
 jobs:
   greetings:
     docker:
-      - image: cimg/base:stable
+      -image: cimg/base:stable
     steps:
-      - checkout
-      - run:
-        - command: echo "Bem vindo ao CircleCI!"
+      -checkout
+      -run:
+        -command: echo "Bem vindo ao CircleCI!"
 
 # Workflows: orquestram a ordem dos jobs
 workflows:
